@@ -1,0 +1,26 @@
+<html>
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>掲示板</title>
+</head>
+<body>
+{if isset($session_name)}
+本文
+    <form method="POST" action="keijiban.php">
+        <textarea name="contents"></textarea>
+        <input type="submit" value="投稿" />
+    </form>
+    <form action="logout.php">
+        <input type="submit" value="ログアウト" />
+    </form>
+
+ユーザー登録もしくはログインしてください
+    <form action="register.php">
+        <input type="submit" value="登録" />
+    </form>
+    <form action="login.php">
+        <input type="submit" value="ログイン" />
+    </form>
+
+</body>
+</html>
